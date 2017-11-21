@@ -1,4 +1,4 @@
-class QuestionStore
+class QuestionStore # Add your questions in the form of an array
   attr_reader :questions
 
   def initialize

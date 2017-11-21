@@ -14,7 +14,7 @@ RSpec.describe Quiz do
                     'How many time zones are there in the world?' => '24',
                     'Which is the largest desert on earth?' => 'Sahara' }
 
-stdoutMock = "What is the capital of Turkey?\n""Correct, the answer is Ankhara\n""What is the national animal of China?\n""Incorrect, the answer is Giant Panda\n""Which Turkish city has the name of a cartoon character?\n""Incorrect, the answer is Batman\n""What is the noisiest city in the world?\n""Incorrect, the answer is Hong Kong\n""What is the name of the desert area in Mexico?\n""Incorrect, the answer is Sonora\n""What is a very cold part of Russia?\n""Incorrect, the answer is Siberia\n""How many continents are there?\n""Incorrect, the answer is Seven\n""On which Italian island is Palermo?\n""Incorrect, the answer is Sicily\n""How many time zones are there in the world?\n""Incorrect, the answer is 24\n""Which is the largest desert on earth?\n""Incorrect, the answer is Sahara\n"
+  stdoutMock = "What is the capital of Turkey?\n""Correct, the answer is Ankhara\n""What is the national animal of China?\n""Incorrect, the answer is Giant Panda\n""Which Turkish city has the name of a cartoon character?\n""Incorrect, the answer is Batman\n""What is the noisiest city in the world?\n""Incorrect, the answer is Hong Kong\n""What is the name of the desert area in Mexico?\n""Incorrect, the answer is Sonora\n""What is a very cold part of Russia?\n""Incorrect, the answer is Siberia\n""How many continents are there?\n""Incorrect, the answer is Seven\n""On which Italian island is Palermo?\n""Incorrect, the answer is Sicily\n""How many time zones are there in the world?\n""Incorrect, the answer is 24\n""Which is the largest desert on earth?\n""Incorrect, the answer is Sahara\n"
 
   describe '#questions' do
     it 'has 10 questions' do
@@ -27,14 +27,14 @@ stdoutMock = "What is the capital of Turkey?\n""Correct, the answer is Ankhara\n
 
   describe '#ask_questions' do
     it 'prints a question' do
-      answer = "Ankhara"
+      answer = 'Ankhara'
       allow_any_instance_of(Quiz)
         .to receive(:questions)
         .and_return(questionStore)
-        allow_any_instance_of(Quiz)
-          .to receive(:gets)
-          .and_return(answer)
-        expect { subject.ask_questions }.to output(stdoutMock).to_stdout
+      allow_any_instance_of(Quiz)
+        .to receive(:gets)
+        .and_return(answer)
+      expect { subject.ask_questions }.to output(stdoutMock).to_stdout
     end
   end
 
@@ -45,7 +45,7 @@ stdoutMock = "What is the capital of Turkey?\n""Correct, the answer is Ankhara\n
         .and_return(questionStore)
       key = 'What is the capital of Turkey?'
       answer = 'Ankhara'
-      expect(subject.answer_checker('Ankhara', 'What is the capital of Turkey?')).to eq true
+      expect(subject.answer_checker(answer, key)).to eq true
     end
   end
 end

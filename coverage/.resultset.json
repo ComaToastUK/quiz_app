@@ -13,6 +13,20 @@
         null,
         null
       ],
+      "/Users/James/Projects/quiz_app/spec/question_store_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        2,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/Users/James/Projects/quiz_app/spec/quiz_spec.rb": [
         1,
         null,
@@ -65,8 +79,15 @@
         null,
         null,
         null
+      ],
+      "/Users/James/Projects/quiz_app/spec/score_calculator_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        null
       ]
     },
-    "timestamp": 1511271201
+    "timestamp": 1511289130
   }
 }
