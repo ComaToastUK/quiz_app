@@ -2,7 +2,6 @@ require_relative 'question_store'
 require_relative 'printer'
 
 class Quiz
-
   attr_reader :questions
 
   def initialize
@@ -11,20 +10,20 @@ class Quiz
   end
 
   def ask_questions
-    @questions.each {|key|
-      @printer.print(key)
-      answer = gets.chomp
-      answer = answer.to_s
-      answer_checker(answer, key)
-    }
+    @questions.each do |question, key|
+      @printer.print(question)
+      answer = gets.chomp.to_s
+      answer_checker(answer, question)
+    end
   end
 
   def answer_checker(answer, key)
     if answer == @questions[key]
-      return "Correct, the answer is #{@questions[key]}"
+      @printer.print("Correct, the answer is #{@questions[key]}")
+      return true
     else
-      return "Incorrect, the answer is #{@questions[key]}"
+      @printer.print("Incorrect, the answer is #{@questions[key]}")
+     return false
     end
   end
-
 end
