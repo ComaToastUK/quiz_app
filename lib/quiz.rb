@@ -20,15 +20,16 @@ class Quiz
   end
 
   def answer_checker(answer, key)
-    if answer == @questions[key] && @questions[key] != nil
+    if answer == @questions[key] && !@questions[key].nil?
       @printer.print("Correct, the answer is #{@questions[key]}")
       @scoreCalculator.correct_answer
       true
-    elsif answer != @questions[key] && @questions[key] != nil
+    elsif answer != @questions[key] && !@questions[key].nil?
       @printer.print("Incorrect, the answer is #{@questions[key]}")
       false
-    elsif @questions[key] == nil
+    elsif @questions[key].nil?
       @printer.print("Quiz complete! You scored #{@scoreCalculator.score} points")
+      exit
     end
   end
 end

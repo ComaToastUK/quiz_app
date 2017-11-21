@@ -1,7 +1,6 @@
 require './lib/question_store.rb'
 
 RSpec.describe QuestionStore do
-
   subject(:question_store) { described_class.new }
 
   describe '#questions' do

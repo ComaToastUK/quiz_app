@@ -47,5 +47,27 @@ RSpec.describe Quiz do
       answer = 'Ankhara'
       expect(subject.answer_checker(answer, key)).to eq true
     end
+
+    it 'returns false if answer is incorrect' do
+      allow_any_instance_of(Quiz)
+        .to receive(:questions)
+        .and_return(questionStore)
+      key = 'What is the capital of Turkey?'
+      answer = 'Istanbul'
+      expect(subject.answer_checker(answer, key)).to eq false
+    end
+
+    it 'gives the score at the end of the game' do
+      answer = 'Ankhara'
+      key = nil
+      emptyQuestions = {}
+      allow_any_instance_of(Quiz)
+        .to receive(:questions)
+        .and_return(emptyQuestions)
+      allow_any_instance_of(Quiz)
+        .to receive(:gets)
+        .and_return(answer)
+      expect { subject.answer_checker(answer, key) }.to output('Quiz complete! You scored 0 points').to_stdout
+    end
   end
 end
