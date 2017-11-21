@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-11-21T18:32:10+00:00">2017-11-21T18:32:10+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-11-21T18:43:00+00:00">2017-11-21T18:43:00+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.19
+         1.28
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>4</b> files in total.
-    <b>35</b> relevant lines. 
-    <span class="green"><b>35</b> lines covered</span> and
+    <b>39</b> relevant lines. 
+    <span class="green"><b>39</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -83,11 +83,11 @@
       <tr>
         <td class="strong"><a href="#a4878435ff1fef402eed717864fc0be6a6c88b26" class="src_link" title="spec/score_calculator_spec.rb">spec/score_calculator_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>5</td>
-        <td>2</td>
-        <td>2</td>
+        <td>13</td>
+        <td>6</td>
+        <td>6</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>1.7</td>
       </tr>
       
     </tbody>
@@ -606,8 +606,8 @@
     <h3>spec/score_calculator_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>2</b> relevant lines. 
-      <span class="green"><b>2</b> lines covered</span> and
+      <b>6</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -636,10 +636,58 @@
         <li class="never" data-hits="" data-linenumber="4">
           
           
-          <code class="ruby">  </code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="covered" data-hits="2" data-linenumber="5">
+          <span class="hits">2</span>
+          
+          <code class="ruby">  subject(:score_calculator) { described_class.new }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &#39;#correct_answer&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;increases the score by 1&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="9">
+          <span class="hits">4</span>
+          
+          <code class="ruby">      expect{ subject.correct_answer }.to change { subject.score }.by 1</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
           
           
           <code class="ruby">end</code>
