@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-11-21T19:00:24+00:00">2017-11-21T19:00:24+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-11-21T19:20:22+00:00">2017-11-21T19:20:22+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">98.04%</span></span>
+    (<span class="covered_percent"><span class="green">96.3%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.15
+         1.13
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>4</b> files in total.
-    <b>51</b> relevant lines. 
-    <span class="green"><b>50</b> lines covered</span> and
-    <span class="red"><b>1</b> lines missed </span>
+    <b>54</b> relevant lines. 
+    <span class="green"><b>52</b> lines covered</span> and
+    <span class="red"><b>2</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -63,7 +63,7 @@
       <tr>
         <td class="strong"><a href="#a94e063300ade141d1af95caee7a05770368b186" class="src_link" title="spec/question_store_spec.rb">spec/question_store_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>12</td>
+        <td>11</td>
         <td>6</td>
         <td>6</td>
         <td>0</td>
@@ -82,11 +82,11 @@
       
       <tr>
         <td class="strong"><a href="#a4878435ff1fef402eed717864fc0be6a6c88b26" class="src_link" title="spec/score_calculator_spec.rb">spec/score_calculator_spec.rb</a></td>
-        <td class="yellow strong">83.33 %</td>
-        <td>13</td>
-        <td>6</td>
-        <td>5</td>
-        <td>1</td>
+        <td class="red strong">77.78 %</td>
+        <td>17</td>
+        <td>9</td>
+        <td>7</td>
+        <td>2</td>
         <td>0.8</td>
       </tr>
       
@@ -217,55 +217,49 @@
           <code class="ruby">RSpec.describe QuestionStore do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="5">
+        <li class="covered" data-hits="2" data-linenumber="4">
           <span class="hits">2</span>
           
           <code class="ruby">  subject(:question_store) { described_class.new }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="6">
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="7">
+        <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
           <code class="ruby">  describe &#39;#questions&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="8">
+        <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
           <code class="ruby">    it &#39;contains 10 question/answer pairs&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="9">
+        <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
           <code class="ruby">      expect(subject.questions.length).to eq 10</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
+        <li class="never" data-hits="" data-linenumber="9">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="never" data-hits="" data-linenumber="10">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="12">
+        <li class="never" data-hits="" data-linenumber="11">
           
           
           <code class="ruby">end</code>
@@ -617,19 +611,19 @@
         <li class="covered" data-hits="1" data-linenumber="55">
           <span class="hits">1</span>
           
-          <code class="ruby">        key = &#39;What is the capital of Turkey?&#39;</code>
+          <code class="ruby">      key = &#39;What is the capital of Turkey?&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="56">
           <span class="hits">1</span>
           
-          <code class="ruby">        answer = &#39;Istanbul&#39;</code>
+          <code class="ruby">      answer = &#39;Istanbul&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="57">
           <span class="hits">1</span>
           
-          <code class="ruby">        expect(subject.answer_checker(answer, key)).to eq false</code>
+          <code class="ruby">      expect(subject.answer_checker(answer, key)).to eq false</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="58">
@@ -689,25 +683,25 @@
         <li class="covered" data-hits="1" data-linenumber="67">
           <span class="hits">1</span>
           
-          <code class="ruby">        allow_any_instance_of(Quiz)</code>
+          <code class="ruby">      allow_any_instance_of(Quiz)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="68">
           
           
-          <code class="ruby">          .to receive(:gets)</code>
+          <code class="ruby">        .to receive(:gets)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="69">
           
           
-          <code class="ruby">          .and_return(answer)</code>
+          <code class="ruby">        .and_return(answer)</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="70">
           <span class="hits">2</span>
           
-          <code class="ruby">        expect{ subject.answer_checker(answer, key) }.to output(&quot;Quiz complete! You scored 0 points&quot;).to_stdout</code>
+          <code class="ruby">      expect { subject.answer_checker(answer, key) }.to output(&#39;Quiz complete! You scored 0 points&#39;).to_stdout</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="71">
@@ -736,11 +730,11 @@
         <div class="source_table" id="a4878435ff1fef402eed717864fc0be6a6c88b26">
   <div class="header">
     <h3>spec/score_calculator_spec.rb</h3>
-    <h4><span class="yellow">83.33 %</span> covered</h4>
+    <h4><span class="red">77.78 %</span> covered</h4>
     <div>
-      <b>6</b> relevant lines. 
-      <span class="green"><b>5</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
+      <b>9</b> relevant lines. 
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
     </div>
   </div>
   
@@ -765,61 +759,85 @@
           <code class="ruby">RSpec.describe ScoreCalculator do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="5">
+        <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
           <code class="ruby">  subject(:score_calculator) { described_class.new }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="6">
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &#39;#initialize&#39; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
-          <code class="ruby">  describe &#39;#correct_answer&#39; do</code>
+          <code class="ruby">    it &#39;initializes with a score of 0&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="8">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="8">
           
-          <code class="ruby">    it &#39;increases the score by 1&#39; do</code>
+          
+          <code class="ruby">      expect(subject.score).to eq 0</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="9">
-          
-          
-          <code class="ruby">      expect{ subject.correct_answer }.to change { subject.score }.by 1</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="10">
+        <li class="never" data-hits="" data-linenumber="9">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="never" data-hits="" data-linenumber="10">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="12">
+        <li class="never" data-hits="" data-linenumber="11">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="13">
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &#39;#correct_answer&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;increases the score by 1&#39; do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="14">
+          
+          
+          <code class="ruby">      expect { subject.correct_answer }.to change { subject.score }.by 1</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
           
           
           <code class="ruby">end</code>
